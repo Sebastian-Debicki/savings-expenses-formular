@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style-notes.css">
+</head>
+
+<body>
+  <a href="/index.html" class="btn btn-outline-danger m-1">Powrót</a>
+
+  <div class="container input-group m-3 p-0">
+    <div class="container col-3">
+      <form id="form-add-date">
+        <select class="custom-select" name="monthValue" id="date-from">
+          <option selected>Wybierz...</option>
+          <option value="Styczeń">Styczeń</option>
+          <option value="Luty">Luty</option>
+          <option value="Marzec">Marzec</option>
+          <option value="Kwiecień">Kwiecień</option>
+          <option value="Maj">Maj</option>
+          <option value="Czerwiec">Czerwiec</option>
+          <option value="Lipiec">Lipiec</option>
+          <option value="Sierpień">Sierpień</option>
+          <option value="Wrzesień">Wrzesień</option>
+          <option value="Październik">Październik</option>
+          <option value="Listopad">Listopad</option>
+          <option value="Grudzień">Grudzień</option>
+        </select>
+        <select class="custom-select" name="yearValue" id="date-to">
+          <option selected>Wybierz...</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+        </select>
+      </form>
+      <form id="form-goal" class="pt-4">
+        <label>Cel w tym miesiącu:</label> <input id="input-goal" name='inputGoal' class="form-control" type="number">
+        <button class="btn btn-secondary">Dodaj</button>
+      </form>
+    </div>
+
+
+    <div id="total" class="container col-8 d-flex flex-wrap">
+      <div class="container col-6 p-1">
+        <p id="total-incomes">Całkowite przychody: <span></span> zł</p>
+        <p id="total-expendes">Całkowite wydatki: <span></span> zł</p>
+
+      </div>
+      <div class="container col-6 p-1">
+        <p id="goal-month">Cel na miesiąc: <span>0</span> zł</p>
+        <p id="goal-left">Do osiągnięcia celu zostało: <span>0</span> zł</p>
+      </div>
+      <div class="container text-center">
+        <p id="total-savings">Zaoszczędzone w tym miesiącu: <span></span> zł</p>
+        <button class="btn btn-outline-secondary" id="btn-reload">Odśwież</button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Nazwa</th>
+        <th scope="col">Przychody</th>
+        <th scope="col">Notatki</th>
+      </tr>
+    </thead>
+    <tbody id="container-incomes">
+    </tbody>
+  </table>
+
+  <table class="table table-bordered table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Nazwa</th>
+        <th scope="col">Wydatki</th>
+        <th scope="col">Notatki</th>
+      </tr>
+    </thead>
+    <tbody id="container-expends">
+    </tbody>
+  </table>
+
+
+  <script src="uuidv4.js"></script>
+  <script src="savings-functions.js"></script>
+  <script src="incomes.js"></script>
+  <script src="expendes.js"></script>
+</body>
+
+</html>

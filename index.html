@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formularz oszczędności</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container-row px-5 py-3 text-center">
+
+
+    <h1 class="title">Formularz oszczędności</h1>
+
+    <form id="form-add-date">
+      <select class="custom-select" name="monthValue">
+        <option selected>Miesiąc</option>
+        <option value="Styczeń">Styczeń</option>
+        <option value="Luty">Luty</option>
+        <option value="Marzec">Marzec</option>
+        <option value="Kwiecień">Kwiecień</option>
+        <option value="Maj">Maj</option>
+        <option value="Czerwiec">Czerwiec</option>
+        <option value="Lipiec">Lipiec</option>
+        <option value="Sierpień">Sierpień</option>
+        <option value="Wrzesień">Wrzesień</option>
+        <option value="Październik">Październik</option>
+        <option value="Listopad">Listopad</option>
+        <option value="Grudzień">Grudzień</option>
+      </select>
+      <select class="custom-select" name="yearValue">
+        <option selected>Rok</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+      </select>
+      <button class="btn btn-secondary m-2">Dodaj</button>
+    </form>
+    <div>
+      <input class="form-control" id="search-input" type="text" placeholder="szukaj...">
+    </div>
+
+
+    <div id="container-months" class="container mt-4"></div>
+
+  </div>
+
+
+  <script src="uuidv4.js"></script>
+  <script src="savings-functions.js"></script>
+  <script src="savings.js"></script>
+</body>
+
+</html>

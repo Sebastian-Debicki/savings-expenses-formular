@@ -1,0 +1,24 @@
+td {
+  padding: 0px !important;
+}
+
+.moneyInput {
+  width: 50%;
+}
+
+.nameTable {
+  width: 35%;
+  line-height: 38px;
+  font-weight: bold;
+}
+
+#total {
+  border: 0.5px solid rgb(52, 58, 64);
+  padding: 15px;
+  background-color: rgb(242, 242, 242);
+}
+
+#total span {
+  font-weight: bold;
+  font-size: 18px;
+}
