@@ -137,7 +137,6 @@ formAddDate.addEventListener('submit', (e) => {
     ]
   })
 
-  // location.assign(`/notes.html#${id}`)
   saveData(months)
   renderMonths(months, filters)
 })

@@ -45,7 +45,7 @@ const generateDOMelements = (month) => {
 
   // create text and link
   const dateTitle = document.createElement('a')
-  dateTitle.setAttribute('href', `/notes.html#${month.id}`)
+  dateTitle.setAttribute('href', `./notes.html#${month.id}`)
   dateTitle.classList.add('p-2')
   divTitle.appendChild(dateTitle)
 
